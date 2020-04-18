@@ -1,66 +1,121 @@
-<!DOCTYPE html>
-<html>
-	<head>
-		<meta charset="utf-8"/>
-		<link rel="stylesheet" href="style.css"/>
-		<title>FOIRE EXPO 2019</title>
-	</head>
-	<body>
-		<div class="conteneur">
-                <header> 
-                    <div class="alignetitre">
-                        <h1>JTBF</h1>
+fieldset /*Mise en page des formulaires*/ {
+}
 
-                        <h2>Jhonny Forever Tribute Band</h2> 
+form {
+    font-size: 2em;
+    margin: auto;
+    color: #6300a0;
+}
 
-                    </div>
-                    <nav>
-                        <ul>
-                            <li><a href="accueil.html">Acceuil</a></li>
-                            <li><a href="#">Le groupe</a></li>
-                            <li><a href="concert.html">Concert</a></li>
-                            <li><a href="photovideo.html">Photo / Vidéo</a></li>
-                             <li><a href="contact.html">Contact</a></li>
-                        </ul>
-                    </nav>                
-                </header> 
-               <section>
-               	<table>
-        			<tr>
-        				<th>Chanson</th>
-        				<th>video</th>
-        			</tr>
-        			<tr>
-        				<td>Diego</td>
-        				<td><video src="video/diego.mp4" controls width="250px" height="200px"></td>
-        			</tr>
-        			<tr>
-        				<td>Noir C Noir</td>
-        				<td><video src="video/noircnoir.mts" controls width="250px" height="200px"></td>
-        			</tr>
-        			<tr>
-        				<td>Pas Moi</td>
-        				<td><video src="video/pasMoi.mts"controls width="250px" height="200px"></td>
-        			</tr> 
-        		</table>              		
+label {
+    display: flex;
+    justify-content: flex-start;
+}
 
-               </section>
- <footer>
-                    <p>Copyright JFTB - Tous droits réservés<br />
-                        <a href="contact.html">Nous contacter !</a></p>
-                       <div class="dispositionicone">
-                            <p>nous suivre :</p>
-                            <p>
-                            <a href="https://www.facebook.com/Johnny-Forever-tribute-band-523418138173617/" title="je vai voir"target="blank"><img src="images/facebook.png" alt="icone facebook" /></a>
-                            </p>
-                            <p>
-                            <a href="https://twitter.com/home?lang=fr" title="je vai voir" target="blank"><img src="images/twitter.png" alt="icone twitter"/></a></br>
-                            </p>
-                             <p>
-                            <a href="https://www.instagram.com/j.t.b.f.24000/?hl=fr" title="je vai voir" target="blank"><img src="images/instagram.png" alt="icone insta"/></a>
-                            </p>
-                        </div>
-                </footer>
-        </div>
-	</body>
-</html>
+input {
+    border-radius: 10px;
+    outline: none;
+    transition: background-color 1000ms;
+    justify-content: flex-end
+}
+
+.meschansons {
+    font-family: 'Kaushan Script';
+    color: black;
+    text-shadow: 2px 2px 2px grey;
+    font-size: .5em;
+}
+
+input:focus {
+    border: 2px solid #6300a0;
+}
+
+input:not(:focus):invalid {
+    background: #b20a37;
+    border: 2px solid #b20a37;
+    color: #fff;
+    animation: headshake 100ms cubic-bezier(.4,.1,.6,.9);
+    animation-iteration-count: 3;
+}
+
+select {
+    border: 0.5px solid black;
+    border-radius: 10px;
+    border-color: #6300a0;
+    color: #6300a0;
+}
+
+legend {
+    font-weight: bold;
+    text-decoration: underline;
+    font-size: 20px;
+}
+
+.btn1 {
+    height: 200px;
+    width: 200px;
+    font-family: 'Kaushan Script';
+    border-radius: 1rem;
+    background-image: repeating-linear-gradient(yellow,red);
+    position: relative;
+    z-index: 1;
+    cursor: pointer;
+}
+
+.btn1:hover.btn1::after {
+    opacity: 1;
+}
+
+.btn1::after {
+    padding: 30px;
+    font-family: 'Kaushan Script';
+    font-size: 20px;
+    content: "Perigeux le 21/06/2020 ";
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    border-radius: 1rem;
+    background-image: url(images/fdlm.jpg);
+    background-size: cover;
+    opacity: 0;
+    z-index: -1;
+    transition: opacity 2000ms;
+}
+
+.btn2 {
+    height: 200px;
+    width: 200px;
+    font-family: 'Kaushan Script';
+    font-size: 20px;
+    color: #6600ED;
+    border-radius: 1rem;
+    background-image: repeating-linear-gradient(yellow,red);
+    position: relative;
+    z-index: 1;
+    cursor: pointer;
+}
+
+.btn2:hover.btn2::after {
+    opacity: 1;
+}
+
+.btn2::after {
+    padding: 50px;
+    font-family: 'Kaushan Script';
+    font-size: 20px;
+    color: #6600ED;
+    content: "coulaure le 15/09/2020  a partir de 21h ";
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    border-radius: 1rem;
+    background-image: url(images/fdloie.jpg);
+    background-size: cover;
+    opacity: 0;
+    z-index: -1;
+    transition: opacity 2000ms;
+}
