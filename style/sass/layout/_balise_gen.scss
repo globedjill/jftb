@@ -20,11 +20,11 @@ a {
     color: blue;
 
     &:visited {
-        color: blue;
+        color: red;
     }
 
     &:hover {
-        color: blue;
+        color: red;
     }
 }
 nav {
@@ -67,16 +67,6 @@ nav {
         }
     }
 }
-
-section
-    {
-        display: flex;
-        flex-direction: row;
-        align-content:flex-start;
-        margin: auto;
-        padding:10px 0 0 10px;
-    }
-
 aside {
     display: flex;
     flex-direction: column;
@@ -85,20 +75,22 @@ aside {
     min-width: 200px;
     max-width: 200px;
     background: $couleur_bg_aside;
-    border: 1px solid black;
+    box-shadow: -2px 2px 12px 0 grey;
     border-radius: 20px;
-    & p{
-    font-size: .8em;
-    }
-}
 
+    & p {
+        font-size: .9em;
+    }
+   
+}
 article {
     font-size: $taille_font_p;
     margin:10px 0 20px 0;
 }
-section{
-    display:flex;
-    flex-direction:row;
-    justify-content:space-between;
-    margin:auto 0px;
+section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: auto 0px;
+    padding: 10px 0 0 10px;
 }
