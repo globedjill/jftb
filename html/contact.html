@@ -1,0 +1,111 @@
+﻿   
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="utf-8" />
+        <link rel="stylesheet" href="style/style.css"/>
+        <title>J.F.T.B</title>
+    </head>
+
+    <body>
+        <iv class="conteneur">
+                <header> 
+                    <div class="alignetitre">
+                        <h1>JTBF</h1>
+                        <h2>Jhonny Forever Tribute Band</h2>        
+                    </div>
+                    <nav>
+                        <ul>
+                            <li><a href="accueil.html">Acceuil</a></li>
+                            <li><a href="#">Le groupe</a></li>
+                            <li><a href="concert.html">Concert</a></li>
+                            <li><a href="photovideo.html">Photo / Vidéo</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </nav>                
+                </header>
+
+                 <section>
+                    
+                            <form>
+                                <label for="rechercher">Rechercher</label>
+                                <input type="search"/>
+                            </form>   
+                </section>  
+
+                <section>
+                    <form method="post" action="traitement.php">
+
+                        <FIELDSET>  
+                            <legend>Vos coordonnées</legend>
+                            <p>
+                                <label for="pseudo">Pseudo :</label>
+                                <input type="text" name="pseudo" id="pseudo" maxlength="20" required/>
+                            </p>
+                            <p>
+                                <label for="motdepasse">Mot de passe :</label>
+                                <input type="password" required/>
+                            </p>
+                            <p>
+                                <label for="description">Je parle de moi :</label>
+                                <textarea></textarea>
+                            </p>
+                            <p>
+                                <label for="email"> Mon email :</label>
+                                <input type="email" placeholder="   moi@pourquoipas.fr" required>
+                            </p>  
+                             <p>
+                                <label for="telephone">Ou me joindre :</label>
+                                <input type="tel" maxlength="10" placeholder="   0235686515" />
+                            </p>
+                            <p>
+                                <label for="datedenaissance">Date de naissance :</label>
+                                <input type="date" required/>
+                            </p>
+                              <p>
+                                    <label for="meschansons">Ma chansons que j'aime :</label>
+                                    <div class="meschansons">
+                                        <input type="radio" name="titre" value="Toute la musique que j'aime" /><label for="Toute la musique que j'aime">Toute la musique que j'aime</label>
+                                        <input type="radio" name="titre" value="gabrielle" /><label for="gabrielle">Gabriel</label>
+                                        <input type="radio" name="titre" value="sarah" /><label for="Sarah">Ma jolie Sarah</label>
+                                        <input type="radio" name="titre" value="quelque cris" /><label for="quelquecris">Quelques cris</label>
+                                        <input type="radio" name="titre" value="tenessee" /><label for="Tenesse">Tenesse</label>
+                                    </div>                    
+                            </p>
+                            <p>
+                                <label for="region">Dans quelle région vivait vous ?</label></br>
+                                <select name="region" id="region">
+                                    <option value="dordogne">Dordogne (24)</option>
+                                    <option value="lot">Lot (46)</option>
+                                    <option value="gironde">Gironde (33)</option>
+                                    <option value="charente">Charente (47</option>
+                                    <option value="Corréze">Corréze (26)</option>
+                                    <option value="Autre">Autre</option>
+                                </select>
+                            </p>
+                            <p>
+                                    <input type="submit" value="Envoyer" />
+                            </p>
+                        </FIELDSET> 
+                    </form>
+                </section>
+
+                <footer>
+                    <p>Copyright JFTB - Tous droits réservés<br />
+                        <a href="contact.html">Nous contacter !</a></p>
+                       <div class="dispositionicone">
+                            <p>nous suivre :</p>
+                            <p>
+                            <a href="https://www.facebook.com/Johnny-Forever-tribute-band-523418138173617/" title="je vai voir"target="blank"><img src="images/facebook.png" alt="icone facebook" /></a>
+                            </p>
+                            <p>
+                            <a href="https://twitter.com/home?lang=fr" title="je vai voir" target="blank"><img src="images/twitter.png" alt="icone twitter"/></a></br>
+                            </p>
+                              <p>
+                            <a href="https://www.instagram.com/j.t.b.f.24000/?hl=fr" title="je vai voir" target="blank"><img src="images/instagram.png" alt="icone insta"/></a>
+                            </p>
+                        </div>
+                </footer>
+        </div>
+    </body>
+</html>

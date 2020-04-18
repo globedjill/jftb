@@ -1,0 +1,24 @@
+﻿$font_family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    $font_family_titre: 'Kaushan Script' ;
+
+/*Les Couleurs*/
+    /*Ecritures*/
+    $couleur_font_h1: rgba(250, 0, 0, 1);
+    $couleur_font_h2: rgba(250, 0, 0, 1);
+    $couleur_font_h3: rgba(255,0,8,0.7);
+    $couleur_font_p: black;
+    $couleur_font_nav: rgba(255, 255, 255, 1);
+
+    /*Background*/
+    $couleur_bg_body: linear-gradient(120deg, rgba(0,0,0,0.4) 0%, rgba(249,252,184,0.35) 20%, rgba(255,199,143,0.3) 65%, rgba(255,198,142,0.3) 75%, rgba( 255,0,0,0.61) 100%);
+    $couleur_bg_nav: rgba(0, 161, 179, 0.63);
+    $couleur_bg_aside: rgba(207, 68, 68, 0.23);
+    $couleur_bg_footer: $couleur_bg_nav;
+
+/*Les tailles*/
+$taille_font_h1: 3em;
+$taille_font_h2: 1.7em;
+$taille_font_p: 1.2em;
+$taille_font_nav:1em;
+
+$rotate_wiggle: 3deg;

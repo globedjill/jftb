@@ -1,0 +1,29 @@
+﻿table /*Mise en page des Tableaux*/ {
+    border-collapse: collapse;
+    display: flex;
+    flex-direction: column;
+    align-content: space-around;
+    margin: auto;
+    padding: 5px;
+}
+
+tr {
+    background-color: #EBF4FC;
+}
+
+td {
+    border: 1px solid black;
+    padding: 5px;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+th {
+    border: 1px solid black;
+    padding: 5px;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+caption {
+}

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Default</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ItemType>GenericProject</ItemType>
+    <ProjectGuid>{CC389AF6-E8B9-491D-8FC6-2C52D961EE18}</ProjectGuid>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Default|AnyCPU' ">
+    <OutputPath>.\</OutputPath>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Include="style\sass\layout\_balise_gen.scss" />
+    <None Include="style\sass\layout\_formulaire.scss" />
+    <None Include="style\sass\pages\_index.scss" />
+    <None Include="style\sass\layout\_tableau.scss" />
+    <None Include="html\le_groupe.html" />
+    <None Include="style\sass\pages\_le_groupe.scss" />
+  </ItemGroup>
+</Project>
