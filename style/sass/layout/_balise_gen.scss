@@ -27,8 +27,7 @@ a {
         color: blue;
     }
 }
-nav
-    {
+nav {
     font-size: $taille_font_nav;
     display: flex;
     flex-direction: row;
@@ -37,26 +36,28 @@ nav
     text-transform: uppercase;
     cursor: pointer;
     background: $couleur_bg_nav;
-    padding:10px 0;
-    & p
-        {
-        margin:auto;
+    padding: 10px 0;
+
+    & p {
+        transition: 200ms ease-in-out;
+        margin: auto;
         font-weight: 100;
-        & a
-            {
-            margin:auto;
+        &:hover {
+            transform: scaleX(1.5);
+            color: blue;
+        }
+        & a {
+            margin: auto;
             color: $couleur_font_nav;
-            &:visited
-                {
+            &:visited {
                 color: $couleur_font_nav;
-                }
-            &:hover
-                {
+            }
+            &:hover {
                 color: blue;
-                }
             }
         }
     }
+}
 
 section
     {
