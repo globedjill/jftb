@@ -55,13 +55,36 @@ section {
             flex-direction: column;
             justify-content: center;
             align-items: center;
+
             & h3 {
                 transition: 600ms ease-in-out;
+
                 &:hover {
                     transform: scale(1.2);
                 }
             }
         }
+
+        & #l_asso {
+            background-image: url("../images/logo_zzzikos24_flou.png");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: right;
+        }
+
+        & #actu {
+            background-image: url("../images/new.png");
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: left;
+        }
+
+        & #concert {
+            background-image: url("../images/bg_concert.png");
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
         & picture {
             display: flex;
             flex-direction: row;

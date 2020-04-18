@@ -42,18 +42,27 @@ nav {
         transition: 200ms ease-in-out;
         margin: auto;
         font-weight: 100;
+        font-family: $font_family_titre;
+
         &:hover {
-            transform: scaleX(1.5);
-            color: blue;
+            padding:2px 10px;
+            background-color:white;
+            font-weight:400;
+            transform: scaleX(1.5) rotateZ(-7deg);
+            color: red;
+            border-radius:15px 50%;
         }
+
         & a {
             margin: auto;
             color: $couleur_font_nav;
+
             &:visited {
                 color: $couleur_font_nav;
             }
+
             &:hover {
-                color: blue;
+                color: red;
             }
         }
     }
