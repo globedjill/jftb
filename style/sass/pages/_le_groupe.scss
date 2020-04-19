@@ -2,15 +2,36 @@
     & .englobe {
         display: flex;
         flex-direction: column;
-        justify-content: space-around;
+        justify-content: center;
         align-items: center;
     }
 
     & .musicien {
         display: flex;
-        flex-direction: row;
-        justify-content: space-around;
+        flex-direction: column;
+        justify-content: center;
         width: 100%;
+
+        & article {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+
+            & .align_instru {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+
+                & a {
+                    transition: 500ms ease-in-out;
+
+                    &:hover {
+                        transform: scale(1.4) translateY(20px);
+                    }
+                }
+            }
+        }
 
         & p {
             display: flex;
@@ -23,6 +44,9 @@
             height: 150px;
             border-radius: 100%;
             border: 2px solid orange;
+            margin: 10px 20px;
+
+           
         }
     }
 }

@@ -686,14 +686,31 @@ section .mep_index picture img {
 #groupe .englobe {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
 }
 #groupe .musicien {
   display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+}
+#groupe .musicien article {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+#groupe .musicien article .align_instru {
+  display: flex;
   flex-direction: row;
   justify-content: space-around;
-  width: 100%;
+}
+#groupe .musicien article .align_instru a {
+  transition: 500ms ease-in-out;
+}
+#groupe .musicien article .align_instru a:hover {
+  transform: scale(1.4) translateY(20px);
 }
 #groupe .musicien p {
   display: flex;
@@ -705,6 +722,7 @@ section .mep_index picture img {
   height: 150px;
   border-radius: 100%;
   border: 2px solid orange;
+  margin: 10px 20px;
 }
 
 #aside_le_groupe .orient_row {
