@@ -2,3 +2,29 @@
 {
     animation: wiggle 4500ms infinite;
 }
+@mixin position_image_groupe_p{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@mixin position_image_groupe_i {
+    transition: none;
+    position: absolute;
+    bottom: 15px;
+    left: 37%;
+    font-size: 1.5em;
+    color: $couleur_font_i;
+    border: 2px solid $couleur_font_i;
+    border-radius: 100%;
+    padding: 5px;
+}
+@mixin position_image_groupe_img {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    border-radius: 100%;
+    border: 2px solid orange;
+    margin: 10px 20px;
+}

@@ -98,6 +98,7 @@ h2 {
 
 header {
   position: fixed;
+  z-index: 1;
   top: 0;
   background-image: url("../images/fd_flamme2.jpg");
   background-repeat: no-repeat;
@@ -544,34 +545,69 @@ section .mep_index picture img {
   flex-direction: row;
   justify-content: space-around;
 }
-#groupe .musicien article .align_instru a {
+#groupe .musicien article .align_instru p {
   transition: 500ms ease-in-out;
 }
-#groupe .musicien article .align_instru a:hover {
+#groupe .musicien article .align_instru p:hover {
   transform: scale(1.4) translateY(20px);
 }
 #groupe .musicien p {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
+#groupe .musicien i {
+  transition: none;
+  position: absolute;
+  bottom: 15px;
+  left: 37%;
+  font-size: 1.5em;
+  color: darkorange;
+  border: 2px solid darkorange;
+  border-radius: 100%;
+  padding: 5px;
+}
 #groupe .musicien img {
+  position: relative;
   width: 150px;
   height: 150px;
   border-radius: 100%;
   border: 2px solid orange;
   margin: 10px 20px;
 }
-
-#aside_le_groupe .orient_row {
+#groupe #aside_le_groupe .orient_row {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-around;
 }
-#aside_le_groupe .orient_row img {
+#groupe #aside_le_groupe .orient_row img {
+  position: relative;
+  width: 150px;
+  height: 150px;
+  border-radius: 100%;
+  border: 2px solid orange;
+  margin: 10px 20px;
   width: 90px;
   height: 90px;
   border-radius: 100%;
+}
+#groupe #aside_le_groupe .orient_row p {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#groupe #aside_le_groupe .orient_row i {
+  transition: none;
+  position: absolute;
+  bottom: 15px;
+  left: 37%;
+  font-size: 1.5em;
+  color: darkorange;
+  border: 2px solid darkorange;
+  border-radius: 100%;
+  padding: 5px;
 }
 
 /*# sourceMappingURL=style.css.map */
