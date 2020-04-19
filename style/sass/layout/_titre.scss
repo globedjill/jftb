@@ -23,11 +23,22 @@ h2 {
     text-decoration-line: underline;
     
 }
-.titre_page
-    {
+.titre_page {
+    position: relative;
     margin-top: -30px;
-    font-size: 4em;
+    font-size: $taille_font_titrePage;
     text-decoration: none;
     text-shadow: 2px 2px 2px grey;
-    width:100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+    &::before {
+        position: absolute;
+        content: "";
+        animation: surlign 4000ms 1000ms ease-in-out ;
+        width: 40%;
+        height: $taille_font_titrePage/2.4;
+        border-radius: 10% 50%;
     }
+}

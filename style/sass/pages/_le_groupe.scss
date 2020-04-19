@@ -4,6 +4,8 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        margin:10px;
+        margin-right:25px;
     }
 
     & .musicien {
@@ -45,8 +47,6 @@
             border-radius: 100%;
             border: 2px solid orange;
             margin: 10px 20px;
-
-           
         }
     }
 }
