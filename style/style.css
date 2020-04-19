@@ -52,10 +52,40 @@
     transform: rotateZ(-3deg);
   }
 }
+@media (max-width: 770px) {
+  body {
+    margin-top: 45%;
+  }
+
+  aside {
+    min-width: 300px;
+  }
+
+  .mep_section picture {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
+
+  .mep_section article {
+    max-width: 770px;
+    margin: auto;
+    padding: 0 5px;
+  }
+
+  nav {
+    display: flex;
+    flex-direction: column;
+  }
+
+  h1 {
+    font-size: 0.625em;
+  }
+}
 /*Layout*/
 h1 {
   font-family: "Kaushan Script";
-  font-size: 200%;
+  font-size: 2.5em;
   cursor: pointer;
   color: #fa0000;
 }
@@ -93,6 +123,7 @@ header {
   position: fixed;
   z-index: 1;
   top: 0;
+  left: 0;
   width: 100%;
   background-image: url("../images/fd_flamme2.jpg");
   background-repeat: no-repeat;
@@ -101,6 +132,11 @@ header {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+}
+@media (max-width: 770px) {
+  header {
+    position: unset;
+  }
 }
 header .titre {
   position: relative;
@@ -120,70 +156,6 @@ header .titre img {
   color: white;
 }
 
-/*.j
-    {
-    transform: scale(2) translateX(250%) translateY(20%)rotate(0);
-    animation: j 7000ms 1000ms;
-    animation-fill-mode: forwards;
-    }
-.f
-    {
-    transform: scale(2) translateX(290%) translateY(20%)rotate(0);
-    animation: f 7000ms 1500ms;
-    animation-fill-mode: forwards;
-    }
-.t
-    {
-    transform: scale(2) translateX(330%) translateY(20%)rotate(0);
-    animation: 7000ms ease 1530ms normal none running t;
-    animation-fill-mode: forwards;
-    }
-.b
-    {
-    transform: scale(2) translateX(330%) translateY(20%)rotate(0);
-    animation: 7000ms ease 1025ms normal b;
-    animation-fill-mode: forwards;
-    }
-.fond
-    {
-    transform: scale(0) translateX(-20%) translateY(40%);
-    background-color: orange;
-    height: 40px;
-    width: 40px;
-    border-radius: 100%;
-    animation: bg_orange 5000ms 2500ms;
-    animation-fill-mode: forwards;
-    position: absolute;
-    }
-.johnny
-    {
-    transform: scale(0) translateY(0) translateX(0);
-    opacity: 0;
-    animation: johnny 6000ms 1000ms;
-    animation-fill-mode: forwards;
-    animation-timing-function: cubic-bezier(.61,.34,.32,1.36);
-    }
-.forever
-    {
-    transform: scale(0) translateY(0) translateX(0);
-    opacity: 0;
-    animation: forever 7000ms 1000ms;
-    animation-fill-mode: forwards;
-    }
-.tribute
-    {
-    transform: scale(0) translateY(0) translateX(0);
-    opacity: 0;
-    animation: tribute 6000ms 1000ms;
-    animation-fill-mode: forwards;
-    }
-.band
-    {
-    transform: scale(0) translateY(0) translateX(0);
-    opacity: 0;
-    animation: band 6000ms 1000ms;
-    animation-fill-mode: forwards;
-    }*/
 footer {
   background: rgba(255, 142, 0, 0.63);
   margin: 50px 0 0 0;
@@ -203,7 +175,7 @@ body {
   display: flex;
   flex-direction: column;
   padding-top: 12%;
-  width: 100%;
+  width: 95%;
 }
 
 p {
@@ -405,6 +377,7 @@ legend {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 .agencement_index .mep_section {
   display: flex;
@@ -467,7 +440,6 @@ legend {
   flex-wrap: wrap;
   box-shadow: -2px 2px 12px 0 grey;
   border-radius: 20px;
-  height: 200px;
 }
 .agencement_index picture img {
   border-radius: 20px;
@@ -478,7 +450,6 @@ legend {
 aside {
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
   order: 2;
 }
 aside p {

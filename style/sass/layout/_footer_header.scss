@@ -3,6 +3,7 @@
     position: fixed;
     z-index: 1;
     top: 0;
+    left:0;
     width: 100%;
     background-image: url("../images/fd_flamme2.jpg");
     background-repeat: no-repeat;
@@ -11,6 +12,9 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    @media(max-width:770px){
+        position:unset;
+    }
     & .titre
         {
         position: relative;
@@ -31,70 +35,7 @@
             }        
         }
     }
-/*.j
-    {
-    transform: scale(2) translateX(250%) translateY(20%)rotate(0);
-    animation: j 7000ms 1000ms;
-    animation-fill-mode: forwards;
-    }
-.f
-    {
-    transform: scale(2) translateX(290%) translateY(20%)rotate(0);
-    animation: f 7000ms 1500ms;
-    animation-fill-mode: forwards;
-    }
-.t
-    {
-    transform: scale(2) translateX(330%) translateY(20%)rotate(0);
-    animation: 7000ms ease 1530ms normal none running t;
-    animation-fill-mode: forwards;
-    }
-.b
-    {
-    transform: scale(2) translateX(330%) translateY(20%)rotate(0);
-    animation: 7000ms ease 1025ms normal b;
-    animation-fill-mode: forwards;
-    }
-.fond
-    {
-    transform: scale(0) translateX(-20%) translateY(40%);
-    background-color: orange;
-    height: 40px;
-    width: 40px;
-    border-radius: 100%;
-    animation: bg_orange 5000ms 2500ms;
-    animation-fill-mode: forwards;
-    position: absolute;
-    }
-.johnny
-    {
-    transform: scale(0) translateY(0) translateX(0);
-    opacity: 0;
-    animation: johnny 6000ms 1000ms;
-    animation-fill-mode: forwards;
-    animation-timing-function: cubic-bezier(.61,.34,.32,1.36);
-    }
-.forever
-    {
-    transform: scale(0) translateY(0) translateX(0);
-    opacity: 0;
-    animation: forever 7000ms 1000ms;
-    animation-fill-mode: forwards;
-    }
-.tribute
-    {
-    transform: scale(0) translateY(0) translateX(0);
-    opacity: 0;
-    animation: tribute 6000ms 1000ms;
-    animation-fill-mode: forwards;
-    }
-.band
-    {
-    transform: scale(0) translateY(0) translateX(0);
-    opacity: 0;
-    animation: band 6000ms 1000ms;
-    animation-fill-mode: forwards;
-    }*/
+
 footer {
     background: $couleur_bg_footer;
     margin: 50px 0 0 0;

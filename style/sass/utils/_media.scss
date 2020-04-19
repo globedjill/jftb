@@ -1,3 +1,30 @@
-﻿@media (max-width:770px) {
-    
+﻿@media(max-width:770px){
+    body {
+        margin-top: 45%;
+    }
+
+    aside {
+        min-width: 300px;
+    }
+
+    .mep_section picture {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+
+    .mep_section article {
+        max-width: 770px;
+        margin: auto;
+        padding: 0 5px;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: column;
+    }
+
+    h1 {
+        font-size: $taille_font_h1/4;
+    }
 }
