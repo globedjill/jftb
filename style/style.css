@@ -53,13 +53,6 @@
   }
 }
 /*Layout*/
-/*.titre1
-    {
-    font-family: 'Kaushan Script';
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    }*/
 h1 {
   font-family: "Kaushan Script";
   font-size: 200%;
@@ -100,29 +93,27 @@ header {
   position: fixed;
   z-index: 1;
   top: 0;
+  width: 100%;
   background-image: url("../images/fd_flamme2.jpg");
   background-repeat: no-repeat;
   background-position: top center;
   background-size: cover;
-  width: 100%;
-  margin: auto;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
 header .titre {
+  position: relative;
   display: flex;
   flex-direction: row;
   justify-content: center;
   margin: auto;
 }
-header .titre picture {
+header .titre img {
   position: absolute;
-  left: 23%;
+  left: -50%;
   top: -1%;
   margin: auto;
-}
-header .titre picture img {
   margin: auto 30px;
   width: 150px;
   height: 150px;
@@ -196,7 +187,6 @@ header .titre picture img {
 footer {
   background: rgba(255, 142, 0, 0.63);
   margin: 50px 0 0 0;
-  width: 100%;
   padding: 10px;
   display: flex;
   justify-content: space-between;
@@ -212,10 +202,8 @@ body {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
-  border: 1px solid black;
-  padding-top: 15%;
-  margin: auto;
+  padding-top: 12%;
+  width: 100%;
 }
 
 p {
@@ -273,12 +261,9 @@ nav p a:hover {
 }
 
 aside {
-  display: flex;
-  flex-direction: column;
-  margin: 10px 10px 10px 0;
   padding: 20px;
-  min-width: 200px;
-  max-width: 200px;
+  margin: 0 20px 0 0;
+  width: 220px;
   background: rgba(207, 68, 68, 0.23);
   box-shadow: -2px 2px 12px 0 grey;
   border-radius: 20px;
@@ -289,15 +274,11 @@ aside p {
 
 article {
   font-size: 1.2em;
-  margin: 10px 0 20px 0;
 }
 
 section {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  margin: auto 0px;
-  padding: 10px 0 0 10px;
+  margin: auto;
+  padding: 10px 0;
 }
 
 form {
@@ -420,6 +401,86 @@ legend {
 }
 
 /*Pages*/
+.agencement_index {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.agencement_index .mep_section {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin: auto;
+  order: 1;
+}
+.agencement_index .mep_section #ligne1, .agencement_index .mep_section #ligne2 {
+  margin: auto 0 60px 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.agencement_index .mep_section #ligne1 article, .agencement_index .mep_section #ligne2 article {
+  margin: 0 20px 20px 0;
+  width: 400px;
+  height: 200px;
+  box-shadow: -2px 2px 12px 0 grey;
+  padding: 0 30px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.agencement_index .mep_section #ligne1 article h3, .agencement_index .mep_section #ligne2 article h3 {
+  transition: 600ms ease-in-out;
+}
+.agencement_index .mep_section #ligne1 article h3:hover, .agencement_index .mep_section #ligne2 article h3:hover {
+  transform: scale(1.2);
+}
+.agencement_index #l_asso {
+  background-image: url("../images/logo_zzzikos24_flou.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: right;
+}
+.agencement_index #actu {
+  background-image: url("../images/new.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: left;
+}
+.agencement_index #concert {
+  background-image: url("../images/bg_concert.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.agencement_index #projet {
+  background-image: url("../images/projet.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.agencement_index picture {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  box-shadow: -2px 2px 12px 0 grey;
+  border-radius: 20px;
+  height: 200px;
+}
+.agencement_index picture img {
+  border-radius: 20px;
+  width: 200px;
+  height: 200px;
+}
+
+aside {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  order: 2;
+}
 aside p {
   color: white;
 }
@@ -433,7 +494,7 @@ aside article:last-child p {
   font-size: 1em;
   text-shadow: 2px 2px 2px 0 grey;
 }
-aside article:last-child a:visited {
+aside article:last-child a {
   color: red;
 }
 aside article:nth-of-type(2) {
@@ -442,82 +503,6 @@ aside article:nth-of-type(2) {
 aside a {
   font-size: 1.2em;
   font-family: "Kaushan Script";
-}
-
-section .mep_index {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  flex-grow: 1;
-  margin: 10px;
-}
-section .mep_index .mep_article_section {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-}
-section .mep_index .mep_article_section #ligne1, section .mep_index .mep_article_section #ligne2 {
-  display: flex;
-  flex-direction: row;
-}
-section .mep_index .mep_article_section #ligne2 {
-  margin-top: 40px;
-  margin-bottom: 60px;
-}
-section .mep_index article {
-  width: 400px;
-  height: 200px;
-  box-shadow: -2px 2px 12px 0 grey;
-  margin: auto;
-  padding: 0 30px;
-  cursor: pointer;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-section .mep_index article h3 {
-  transition: 600ms ease-in-out;
-}
-section .mep_index article h3:hover {
-  transform: scale(1.2);
-}
-section .mep_index #l_asso {
-  background-image: url("../images/logo_zzzikos24_flou.png");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: right;
-}
-section .mep_index #actu {
-  background-image: url("../images/new.png");
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: left;
-}
-section .mep_index #concert {
-  background-image: url("../images/bg_concert.png");
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-section .mep_index #projet {
-  background-image: url("../images/projet.png");
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-section .mep_index picture {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  box-shadow: -2px 2px 12px 0 grey;
-  border-radius: 20px;
-  width: 99%;
-  height: 200px;
-  padding: 2px;
-}
-section .mep_index picture img {
-  border-radius: 20px;
-  width: 200px;
-  height: 200px;
 }
 
 #groupe .englobe {

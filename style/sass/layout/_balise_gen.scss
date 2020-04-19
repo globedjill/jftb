@@ -1,13 +1,10 @@
 ﻿body {
     background-image: $couleur_bg_body;
-    ;
     font-family: $font_family;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
-    border: 1px solid black;
-    padding-top: 15%;
-    margin: auto;
+    padding-top: 12%;
+    width:100%;
 }
 p {
     font-size: $taille_font_p;
@@ -67,30 +64,22 @@ nav {
         }
     }
 }
-aside {
-    display: flex;
-    flex-direction: column;
-    margin: 10px 10px 10px 0;
+aside
+    {
     padding: 20px;
-    min-width: 200px;
-    max-width: 200px;
+    margin: 0 20px 0 0;
+    width: 220px;
     background: $couleur_bg_aside;
     box-shadow: -2px 2px 12px 0 grey;
     border-radius: 20px;
-
     & p {
         font-size: .9em;
+        }
     }
-   
-}
 article {
     font-size: $taille_font_p;
-    margin:10px 0 20px 0;
 }
 section {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin: auto 0px;
-    padding: 10px 0 0 10px;
+    margin: auto;
+    padding:10px 0;
 }
