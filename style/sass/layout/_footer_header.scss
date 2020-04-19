@@ -18,13 +18,15 @@
         margin:auto;
         & picture
             {
-            padding:10px 0;
+            position:absolute;
+            left:23%;
+            top:-1%;
             margin:auto;
             & img
             {
             margin: auto 30px;
-            width: 90px;
-            height: 90px;
+            width: 150px;
+            height: 150px;
             color: white;
             }
         }

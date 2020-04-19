@@ -228,35 +228,36 @@
   }
 }
 /*Layout*/
-.titre1 {
-  font-family: "Kaushan Script";
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-}
-
+/*.titre1
+    {
+    font-family: 'Kaushan Script';
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    }*/
 h1 {
-  opacity: 1;
-  font-size: 300%;
-  text-shadow: 4px 2px 2px yellow;
-  color: black;
-}
-
-h2 {
   font-family: "Kaushan Script";
   font-size: 200%;
   cursor: pointer;
   color: #fa0000;
 }
-h2 span {
+h1 span {
   color: white;
 }
 
-h3 {
+h2 {
   color: rgba(255, 0, 8, 0.7);
   font-family: "Kaushan Script";
   margin: 5px;
   text-decoration-line: underline;
+}
+
+.titre_page {
+  margin-top: -30px;
+  font-size: 4em;
+  text-decoration: none;
+  text-shadow: 2px 2px 2px grey;
+  width: 100%;
 }
 
 header {
@@ -279,13 +280,15 @@ header .titre {
   margin: auto;
 }
 header .titre picture {
-  padding: 10px 0;
+  position: absolute;
+  left: 23%;
+  top: -1%;
   margin: auto;
 }
 header .titre picture img {
   margin: auto 30px;
-  width: 90px;
-  height: 90px;
+  width: 150px;
+  height: 150px;
   color: white;
 }
 
@@ -680,6 +683,30 @@ section .mep_index picture img {
   height: 200px;
 }
 
+#groupe .englobe {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+#groupe .musicien {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 100%;
+}
+#groupe .musicien p {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#groupe .musicien img {
+  width: 150px;
+  height: 150px;
+  border-radius: 100%;
+  border: 2px solid orange;
+}
+
 #aside_le_groupe .orient_row {
   display: flex;
   flex-direction: row;
@@ -689,10 +716,6 @@ section .mep_index picture img {
   width: 90px;
   height: 90px;
   border-radius: 100%;
-}
-
-.paraph_principal {
-  padding: 0 20px 0 0;
 }
 
 /*# sourceMappingURL=style.css.map */
