@@ -617,15 +617,27 @@ aside a {
   position: absolute;
   bottom: 15px;
   left: 37%;
-  font-size: 1.5;
+  font-size: 1.5em;
   color: darkorange;
   border: 2px solid darkorange;
   border-radius: 100%;
   padding: 5px;
 }
+#groupe .musicien i.fa-microphone {
+  font-size: 1.1538461538em;
+  padding: 7px 12px;
+}
+@media (max-width: 770px) {
+  #groupe .musicien i.fa-microphone {
+    font-size: 0.75em;
+    padding: 3px 6px;
+  }
+}
 @media (max-width: 770px) {
   #groupe .musicien i {
-    font-size: 0.75;
+    font-size: 0.75em;
+    bottom: 5px;
+    left: 33%;
   }
 }
 #groupe .musicien img {
@@ -692,15 +704,27 @@ aside a {
   position: absolute;
   bottom: 15px;
   left: 37%;
-  font-size: 1.5;
+  font-size: 1.5em;
   color: darkorange;
   border: 2px solid darkorange;
   border-radius: 100%;
   padding: 5px;
 }
+#groupe #aside_le_groupe .orient_row i.fa-microphone {
+  font-size: 1.1538461538em;
+  padding: 7px 12px;
+}
+@media (max-width: 770px) {
+  #groupe #aside_le_groupe .orient_row i.fa-microphone {
+    font-size: 0.75em;
+    padding: 3px 6px;
+  }
+}
 @media (max-width: 770px) {
   #groupe #aside_le_groupe .orient_row i {
-    font-size: 0.75;
+    font-size: 0.75em;
+    bottom: 5px;
+    left: 33%;
   }
 }
 
