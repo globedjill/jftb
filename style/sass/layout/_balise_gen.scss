@@ -1,4 +1,9 @@
-﻿body {
+﻿@font-face {
+    font-family: "Kaushan Script";
+    src: url("../fonts/kaushan/kaushanscript.otf");
+}
+
+body {
     background-image: $couleur_bg_body;
     font-family: $font_family;
     display: flex;
