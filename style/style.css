@@ -53,10 +53,6 @@
   }
 }
 @media (max-width: 770px) {
-  body {
-    margin-top: 45%;
-  }
-
   aside {
     min-width: 300px;
   }
@@ -72,15 +68,6 @@
     margin: auto;
     padding: 0 5px;
   }
-
-  nav {
-    display: flex;
-    flex-direction: column;
-  }
-
-  h1 {
-    font-size: 0.625em;
-  }
 }
 /*Layout*/
 h1 {
@@ -88,6 +75,11 @@ h1 {
   font-size: 2.5em;
   cursor: pointer;
   color: #fa0000;
+}
+@media (max-width: 770px) {
+  h1 {
+    font-size: 1.9230769231em;
+  }
 }
 h1 span {
   color: white;
@@ -142,7 +134,6 @@ header .titre {
   position: relative;
   display: flex;
   flex-direction: row;
-  justify-content: center;
   margin: auto;
 }
 header .titre img {
@@ -154,6 +145,12 @@ header .titre img {
   width: 150px;
   height: 150px;
   color: white;
+}
+@media (max-width: 770px) {
+  header .titre img {
+    left: 0%;
+    top: 60%;
+  }
 }
 
 footer {
@@ -176,6 +173,12 @@ body {
   flex-direction: column;
   padding-top: 12%;
   width: 95%;
+}
+@media (max-width: 770px) {
+  body {
+    padding-top: 0%;
+    width: 100%;
+  }
 }
 
 p {
@@ -200,18 +203,30 @@ nav {
   font-size: 1em;
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: space-around;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   text-transform: uppercase;
   cursor: pointer;
   background: rgba(255, 142, 0, 0.63);
   padding: 10px 0;
 }
+@media (max-width: 770px) {
+  nav {
+    flex-direction: column;
+    align-items: flex-end;
+    width: 100%;
+  }
+}
 nav p {
   transition: 200ms ease-in-out;
-  margin: auto;
   font-weight: 100;
   font-family: "Kaushan Script";
+  margin: auto;
+}
+@media (max-width: 770px) {
+  nav p {
+    margin: 0 10px 0 0;
+  }
 }
 nav p:hover {
   padding: 2px 10px;
@@ -383,8 +398,12 @@ legend {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  margin: auto;
   order: 1;
+}
+@media (max-width: 770px) {
+  .agencement_index .mep_section {
+    width: 100%;
+  }
 }
 .agencement_index .mep_section #ligne1, .agencement_index .mep_section #ligne2 {
   margin: auto 0 60px 0;
