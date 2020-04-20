@@ -1,19 +1,11 @@
 ﻿@media(max-width:770px){
     
-    aside {
-        min-width: 300px;
-    }
-
+   
     .mep_section picture {
         display: flex;
         flex-direction: column;
         flex-wrap: nowrap;
     }
 
-    .mep_section article {
-        max-width: 770px;
-        margin: auto;
-        padding: 0 5px;
-    }
-
+   
 }

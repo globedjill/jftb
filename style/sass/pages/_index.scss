@@ -11,7 +11,7 @@
         order: 1;
 
         @media(max-width:770px) {
-            width:100%;
+            width: 100%;
         }
 
         & #ligne1, #ligne2 {
@@ -20,6 +20,10 @@
             flex-direction: row;
             justify-content: space-around;
             flex-wrap: wrap;
+
+            @media(max-width:770px) {
+               margin: auto;
+            }
 
             & article {
                 margin: 0 20px 20px 0;
@@ -32,6 +36,12 @@
                 flex-direction: column;
                 justify-content: center;
                 align-items: center;
+
+                @media(max-width:770px) {
+                    margin: 10px;
+                    padding: 0 5px;
+                    width:100%;
+                }
 
                 & h3 {
                     transition: 600ms ease-in-out;
