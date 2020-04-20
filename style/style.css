@@ -149,7 +149,9 @@ header .titre img {
 @media (max-width: 770px) {
   header .titre img {
     left: 0%;
-    top: 60%;
+    top: 95%;
+    width: 120px;
+    height: 120px;
   }
 }
 
