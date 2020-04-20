@@ -1,11 +1,47 @@
-﻿@media(max-width:770px){
-    
-   
-    .mep_section picture {
+﻿.mep_section_actu {
+    & #ligne1, #ligne2 {
         display: flex;
-        flex-direction: column;
-        flex-wrap: nowrap;
-    }
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
 
-   
+        & article {
+            box-shadow: -2px 2px 12px 0 grey;
+            margin: 10px;
+            padding: 20px;
+            width: 45%;
+
+            @media(max-width:770px) {
+                width: 100%;
+            }
+
+            & span {
+                font-size: $taille_font_p*1.5;
+                border: .5px dotted black;
+                color: red;
+                padding: 0px 5px 0 5px;
+                margin-right: 5px;
+            }
+
+            & h2 {
+                text-align: left;
+            }
+
+            & time {
+                font-style: italic;
+            }
+
+            & img {
+                width: 400px;
+                height: 200px;
+                margin: 0 15px 10px 0;
+                float: left;
+
+                @media(max-width:770px) {
+                    width: 100%;
+                    height: 120px;
+                }
+            }
+        }
+    }
 }

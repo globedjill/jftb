@@ -3,11 +3,10 @@
     flex-direction: row;
     justify-content: space-between;
     margin: auto;
-
-    @media(max-width:770px) {
+    @media(max-width:770px)
+        {
         flex-wrap: wrap
-    }
-
+        }
     & .englobe {
         display: flex;
         flex-direction: column;
@@ -17,12 +16,13 @@
         padding: 20px;
         box-shadow: -2px 2px 12px 0 grey;
         border-radius: 20px;
-
-        & #enbref {
-            @media(max-width:770px) {
+        & #enbref
+            {
+            @media(max-width:770px)
+                {
                 width: 100%;
+                }
             }
-        }
     }
 
     & .musicien {

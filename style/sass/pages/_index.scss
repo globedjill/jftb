@@ -4,8 +4,7 @@
     justify-content: space-between;
 
     @media(max-width:770px) {
-        flex-wrap:wrap;
-
+        flex-wrap: wrap;
     }
 
     & .mep_section {
@@ -40,6 +39,7 @@
                 flex-direction: column;
                 justify-content: center;
                 align-items: center;
+
 
                 @media(max-width:770px) {
                     border-radius: 10px;

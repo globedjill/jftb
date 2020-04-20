@@ -17,9 +17,9 @@
 h2 {
     color: rgba(255,0,8,0.7);
     font-family: 'Kaushan Script';
-    margin: 5px;
+    margin: auto;
     text-decoration-line: underline;
-    
+    text-align:center;
     }
 h3 {
     margin: 20px 0;
@@ -27,12 +27,22 @@ h3 {
     font-family: 'Kaushan Script';
     margin: 5px;
     text-decoration-line: underline;
+    font-size: $taille_font_h3;
+
+    @media(max-width:770px) {
+        margin-top: 0;
+
+        @media(max-width:770px) {
+            margin-top: 0;
+            font-size: $taille_font_titrePage/4;
+        }
+    }
 }
 
 .titre_page {
     position: relative;
-    margin-top: -30px;
     font-size: $taille_font_titrePage;
+    margin-top: -30px;
     text-decoration: none;
     text-shadow: 2px 2px 2px grey;
     width: 100%;
@@ -40,7 +50,7 @@ h3 {
     justify-content: center;
 
     @media(max-width:770px) {
-        margin-top:0;
+        margin-top: 0;
         font-size: $taille_font_titrePage/3;
     }
 
