@@ -74,7 +74,7 @@
   border: 0.5px double black;
   border-top-left-radius: 5px;
   color: red;
-  padding: 0px 5px 0 5px;
+  padding: 0px 5px 1px 5px;
   margin-right: 5px;
 }
 .mep_section_actu #ligne1 article h2, .mep_section_actu #ligne2 article h2 {
