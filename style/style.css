@@ -141,9 +141,9 @@ header .titre img {
 @media (max-width: 770px) {
   header .titre img {
     left: 50%;
-    top: 103%;
-    width: 80px;
-    height: 80px;
+    top: 100%;
+    width: 100px;
+    height: 100px;
   }
 }
 
@@ -182,6 +182,11 @@ p {
   text-align: justify;
   color: black;
 }
+@media (max-width: 770px) {
+  p {
+    font-size: 0.9230769231em;
+  }
+}
 
 a {
   text-decoration: none;
@@ -210,7 +215,7 @@ nav {
     flex-direction: column;
     align-items: flex-start;
     width: 100%;
-    font-size: 0.6666666667em;
+    padding: 0px 0;
   }
 }
 nav p {
@@ -222,6 +227,7 @@ nav p {
 @media (max-width: 770px) {
   nav p {
     margin: 0 0 0 40px;
+    padding: 5px 0px;
   }
 }
 nav p:hover {
@@ -433,8 +439,9 @@ legend {
 }
 @media (max-width: 770px) {
   .agencement_index .mep_section #ligne1 article, .agencement_index .mep_section #ligne2 article {
+    border-radius: 10px;
     margin: 10px;
-    padding: 0 5px;
+    padding: 0 15px;
     width: 100%;
   }
 }
@@ -495,8 +502,14 @@ aside article:last-child {
   animation: wiggle 4500ms infinite;
 }
 aside article:last-child p {
-  font-size: 1em;
-  text-shadow: 2px 2px 2px 0 grey;
+  font-size: 1.3076923077em;
+  text-shadow: 2px 2px 2px grey;
+  background-color: rgba(207, 68, 68, 0.23);
+  border-radius: 10px;
+  margin: auto;
+  padding: 0 10px;
+  box-shadow: 2px 2px 12px 2px grey;
+  font-weight: bolder;
 }
 aside article:last-child a {
   color: red;
