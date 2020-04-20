@@ -2,7 +2,11 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    flex-wrap: wrap;
+
+    @media(max-width:770px) {
+        flex-wrap:wrap;
+
+    }
 
     & .mep_section {
         display: flex;

@@ -2,11 +2,16 @@
 {
     animation: wiggle 4500ms infinite;
 }
-@mixin position_image_groupe_p{
+@mixin position_image_groupe_p {
     position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
+    @media(max-width:770px) {
+        justify-content:center;
+        align-items:normal;
+        margin: 0 5px 5px 5px;
+    }
 }
 
 @mixin position_image_groupe_i {
@@ -14,11 +19,15 @@
     position: absolute;
     bottom: 15px;
     left: 37%;
-    font-size: 1.5em;
+    font-size: $taille_font_i;
     color: $couleur_font_i;
     border: 2px solid $couleur_font_i;
     border-radius: 100%;
     padding: 5px;
+
+    @media(max-width:770px) {
+        font-size: $taille_font_i/2;
+    }
 }
 @mixin position_image_groupe_img {
     position: relative;
@@ -27,4 +36,10 @@
     border-radius: 100%;
     border: 2px solid orange;
     margin: 10px 20px;
+
+    @media(max-width:770px) {
+        width: 80px;
+        height: 80px;
+        margin: auto;
+    }
 }

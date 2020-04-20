@@ -84,6 +84,14 @@ h2 {
   text-decoration-line: underline;
 }
 
+h3 {
+  margin: 20px 0;
+  color: rgba(255, 0, 8, 0.7);
+  font-family: "Kaushan Script";
+  margin: 5px;
+  text-decoration-line: underline;
+}
+
 .titre_page {
   position: relative;
   margin-top: -30px;
@@ -93,6 +101,12 @@ h2 {
   width: 100%;
   display: flex;
   justify-content: center;
+}
+@media (max-width: 770px) {
+  .titre_page {
+    margin-top: 0;
+    font-size: 1.3333333333em;
+  }
 }
 .titre_page::before {
   position: absolute;
@@ -170,7 +184,7 @@ body {
   display: flex;
   flex-direction: column;
   padding-top: 12%;
-  width: 95%;
+  width: 100%;
 }
 @media (max-width: 770px) {
   body {
@@ -404,7 +418,11 @@ legend {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  flex-wrap: wrap;
+}
+@media (max-width: 770px) {
+  .agencement_index {
+    flex-wrap: wrap;
+  }
 }
 .agencement_index .mep_section {
   display: flex;
@@ -526,13 +544,31 @@ aside a {
   font-family: Kaushan Script;
 }
 
+#groupe {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: auto;
+}
+@media (max-width: 770px) {
+  #groupe {
+    flex-wrap: wrap;
+  }
+}
 #groupe .englobe {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 10px;
-  margin-right: 25px;
+  margin: 0 10px;
+  padding: 20px;
+  box-shadow: -2px 2px 12px 0 grey;
+  border-radius: 20px;
+}
+@media (max-width: 770px) {
+  #groupe .englobe #enbref {
+    width: 100%;
+  }
 }
 #groupe .musicien {
   display: flex;
@@ -550,6 +586,12 @@ aside a {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  flex-wrap: wrap;
+}
+@media (max-width: 770px) {
+  #groupe .musicien article .align_instru {
+    margin: 0;
+  }
 }
 #groupe .musicien article .align_instru p {
   transition: 500ms ease-in-out;
@@ -563,16 +605,28 @@ aside a {
   flex-direction: column;
   align-items: center;
 }
+@media (max-width: 770px) {
+  #groupe .musicien p {
+    justify-content: center;
+    align-items: normal;
+    margin: 0 5px 5px 5px;
+  }
+}
 #groupe .musicien i {
   transition: none;
   position: absolute;
   bottom: 15px;
   left: 37%;
-  font-size: 1.5em;
+  font-size: 1.5;
   color: darkorange;
   border: 2px solid darkorange;
   border-radius: 100%;
   padding: 5px;
+}
+@media (max-width: 770px) {
+  #groupe .musicien i {
+    font-size: 0.75;
+  }
 }
 #groupe .musicien img {
   position: relative;
@@ -581,6 +635,21 @@ aside a {
   border-radius: 100%;
   border: 2px solid orange;
   margin: 10px 20px;
+}
+@media (max-width: 770px) {
+  #groupe .musicien img {
+    width: 80px;
+    height: 80px;
+    margin: auto;
+  }
+}
+#groupe #aside_le_groupe {
+  margin: 0 20px;
+}
+@media (max-width: 770px) {
+  #groupe #aside_le_groupe {
+    margin: 10px;
+  }
 }
 #groupe #aside_le_groupe .orient_row {
   display: flex;
@@ -598,22 +667,41 @@ aside a {
   height: 90px;
   border-radius: 100%;
 }
+@media (max-width: 770px) {
+  #groupe #aside_le_groupe .orient_row img {
+    width: 80px;
+    height: 80px;
+    margin: auto;
+  }
+}
 #groupe #aside_le_groupe .orient_row p {
   position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
+@media (max-width: 770px) {
+  #groupe #aside_le_groupe .orient_row p {
+    justify-content: center;
+    align-items: normal;
+    margin: 0 5px 5px 5px;
+  }
+}
 #groupe #aside_le_groupe .orient_row i {
   transition: none;
   position: absolute;
   bottom: 15px;
   left: 37%;
-  font-size: 1.5em;
+  font-size: 1.5;
   color: darkorange;
   border: 2px solid darkorange;
   border-radius: 100%;
   padding: 5px;
+}
+@media (max-width: 770px) {
+  #groupe #aside_le_groupe .orient_row i {
+    font-size: 0.75;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

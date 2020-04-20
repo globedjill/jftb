@@ -1,11 +1,28 @@
 ﻿#groupe {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: auto;
+
+    @media(max-width:770px) {
+        flex-wrap: wrap
+    }
+
     & .englobe {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        margin: 10px;
-        margin-right: 25px;
+        margin: 0 10px;
+        padding: 20px;
+        box-shadow: -2px 2px 12px 0 grey;
+        border-radius: 20px;
+
+        & #enbref {
+            @media(max-width:770px) {
+                width: 100%;
+            }
+        }
     }
 
     & .musicien {
@@ -20,10 +37,17 @@
             justify-content: space-around;
             align-items: center;
 
+
             & .align_instru {
                 display: flex;
                 flex-direction: row;
                 justify-content: space-around;
+                flex-wrap: wrap;
+
+                @media(max-width:770px) {
+                    margin: 0;
+                }
+
 
                 & p {
                     transition: 500ms ease-in-out;
@@ -49,6 +73,12 @@
     }
 
     #aside_le_groupe {
+        margin: 0 20px;
+
+        @media(max-width:770px) {
+            margin: 10px;
+        }
+
         & .orient_row {
             display: flex;
             flex-direction: column;
