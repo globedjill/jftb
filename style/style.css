@@ -61,7 +61,7 @@
 }
 /*Layout*/
 h1 {
-  font-family: "Kaushan Script";
+  font-family: Kaushan Script;
   font-size: 2.5em;
   cursor: pointer;
   color: #fa0000;
@@ -221,7 +221,7 @@ nav {
 nav p {
   transition: 200ms ease-in-out;
   font-weight: 100;
-  font-family: "Kaushan Script";
+  font-family: Kaushan Script;
   margin: auto;
 }
 @media (max-width: 770px) {
@@ -519,7 +519,7 @@ aside article:nth-of-type(2) {
 }
 aside a {
   font-size: 1.2em;
-  font-family: "Kaushan Script";
+  font-family: Kaushan Script;
 }
 
 #groupe .englobe {
