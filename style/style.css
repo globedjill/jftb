@@ -846,17 +846,16 @@ legend {
 #fdlm .align_vignette_photo article {
   display: flex;
   flex-direction: row;
-  justify-content: center;
-  align-items: flex-start;
+  justify-content: stretch;
+  align-items: stretch;
   flex-wrap: wrap;
 }
-#fdlm .align_vignette_photo article a img {
-  height: 100%;
+#fdlm .align_vignette_photo article img {
+  margin: 5px;
 }
 @media (max-width: 770px) {
-  #fdlm .align_vignette_photo article a img {
+  #fdlm .align_vignette_photo article img {
     width: 100%;
-    float: right left;
   }
 }
 

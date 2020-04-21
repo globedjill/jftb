@@ -3,21 +3,17 @@
         & article {
             display: flex;
             flex-direction: row;
-            justify-content: center;
-            align-items:flex-start;
+            justify-content:stretch;
+            align-items: stretch;
             flex-wrap: wrap;
 
-            & a {
-               
-
                 & img {
-                    height:100%;
+                    margin:5px;
                     @media(max-width:770px) {
                         width: 100%;
-                        float:right left;
                     }
                 }
             }
         }
     }
-}
+
