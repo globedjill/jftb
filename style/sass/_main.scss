@@ -3,14 +3,14 @@
 @import "utils/_variable";
 @import "utils/_mixins";
 @import "utils/_keyframes";
-@import "utils/_media";
-
+@import "utils/_actu";
 
 /*Layout*/
 @import "layout/_titre";
 @import "layout/_footer_header";
 @import "layout/_balise_gen";
 @import "layout/_formulaire";
+@import "layout/_concert";
 
 /*Pages*/
 @import "pages/_index";
