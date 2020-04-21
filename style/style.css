@@ -843,14 +843,19 @@ legend {
   height: 150px;
 }
 
+#fdlm .align_vignette_photo article {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+}
 #fdlm .align_vignette_photo article a {
   text-align: center;
 }
-#fdlm .align_vignette_photo article a img {
-  transition: 200ms ease-in-out;
-}
-#fdlm .align_vignette_photo article a img:hover {
-  transform: scale(2);
+@media (max-width: 770px) {
+  #fdlm .align_vignette_photo article a img {
+    width: 100%;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

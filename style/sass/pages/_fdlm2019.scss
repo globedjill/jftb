@@ -1,12 +1,17 @@
-﻿#fdlm{
-    & .align_vignette_photo{
-        & article{
-            & a{
-                text-align:center;
-                & img{
-                    transition: 200ms ease-in-out;
-                    &:hover{
-                        transform:scale(2);
+﻿#fdlm {
+    & .align_vignette_photo {
+        & article {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            flex-wrap: wrap;
+
+            & a {
+                text-align: center;
+
+                & img {
+                    @media(max-width:770px) {
+                       width:100%;
                     }
                 }
             }
