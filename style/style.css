@@ -425,6 +425,12 @@ legend {
   font-size: 20px;
 }
 
+.titre_page {
+  font-size: 2em;
+  margin-top: 0px;
+  text-align: center;
+}
+
 #concert {
   display: flex;
   flex-direction: row;
@@ -467,6 +473,7 @@ legend {
   #concert article {
     width: 100%;
     height: 100%;
+    margin: 15px 10px;
   }
 }
 #concert article p {
@@ -755,6 +762,43 @@ legend {
     bottom: 5px;
     left: 33%;
   }
+}
+
+#projet {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+#projet article {
+  margin: auto 40px;
+  padding-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 150px;
+  width: 400px;
+  font-family: "Kaushan Script";
+  position: relative;
+  z-index: 1;
+  border-radius: 1rem;
+  font-size: 20px;
+  box-shadow: -2px 2px 12px 0 grey;
+}
+@media (max-width: 770px) {
+  #projet article {
+    width: 100%;
+    height: 100%;
+    margin: 15px 10px;
+  }
+}
+#projet article p {
+  text-align: center;
+  font-size: 5em;
+}
+#projet article p span {
+  font-style: italic;
+  font-size: 0.7058823529em;
 }
 
 /*# sourceMappingURL=style.css.map */
