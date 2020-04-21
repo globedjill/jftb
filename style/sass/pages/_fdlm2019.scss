@@ -1,0 +1,15 @@
+﻿#fdlm{
+    & .align_vignette_photo{
+        & article{
+            & a{
+                text-align:center;
+                & img{
+                    transition: 200ms ease-in-out;
+                    &:hover{
+                        transform:scale(2);
+                    }
+                }
+            }
+        }
+    }
+}

@@ -796,6 +796,11 @@ legend {
   flex-direction: row;
   justify-content: space-around;
 }
+@media (max-width: 770px) {
+  #photo {
+    flex-wrap: wrap;
+  }
+}
 #photo .align_vignette_photo {
   display: flex;
   flex-direction: row;
@@ -810,6 +815,11 @@ legend {
   padding: 0px 0px;
   margin: 20px;
   background-color: rgba(255, 187, 102, 0.63);
+}
+@media (max-width: 770px) {
+  #photo .align_vignette_photo .vignette {
+    width: 100%;
+  }
 }
 #photo .align_vignette_photo a {
   display: flex;
@@ -829,8 +839,18 @@ legend {
   font-size: 0.9230769231em;
 }
 #photo .align_vignette_photo a img {
-  width: 400px;
+  width: 100%;
   height: 150px;
+}
+
+#fdlm .align_vignette_photo article a {
+  text-align: center;
+}
+#fdlm .align_vignette_photo article a img {
+  transition: 200ms ease-in-out;
+}
+#fdlm .align_vignette_photo article a img:hover {
+  transform: scale(2);
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -2,11 +2,17 @@
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+
+    @media(max-width:770px) {
+        flex-wrap: wrap;
+    }
+
     & .align_vignette_photo {
         display: flex;
         flex-direction: row;
         justify-content: space-around;
         flex-wrap: wrap;
+
         & .vignette {
             display: flex;
             flex-direction: column;
@@ -15,26 +21,34 @@
             padding: 0px 0px;
             margin: 20px;
             background-color: lighten($couleur_bg_nav,20%);
+
+            @media(max-width:770px) {
+               width:100%;
             }
+        }
+
         & a {
             display: flex;
             flex-direction: column;
             justify-content: space-around;
             padding: 0px;
             margin: 0px;
+
             & h2 {
                 font-size: $taille_font_h2/2;
-                }
+            }
+
             & p {
                 padding: 0px;
                 margin: 0px;
                 text-align: center;
                 font-style: italic;
                 font-size: $taille_font_p/1.3;
-                }
-            & img{
-                width: 400px;
-                height:150px;
+            }
+
+            & img {
+                width: 100%;
+                height: 150px;
             }
         }
     }
