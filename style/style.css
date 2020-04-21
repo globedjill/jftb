@@ -74,7 +74,7 @@
   border: 0.5px double black;
   border-top-left-radius: 5px;
   color: red;
-  padding: 0px 5px 1px 5px;
+  padding: 0px 5px 0px 5px;
   margin-right: 5px;
 }
 .mep_section_actu #ligne1 article h2, .mep_section_actu #ligne2 article h2 {
@@ -324,6 +324,37 @@ aside {
   background: rgba(207, 68, 68, 0.23);
   box-shadow: -2px 2px 12px 0 grey;
   border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  order: 2;
+  /*dernier article aside demander un devis*/
+}
+aside h2 {
+  font-size: 1.1333333333em;
+}
+aside article:nth-of-type(2) {
+  flex-grow: 1;
+}
+aside article:nth-of-type(2) a {
+  font-size: 1.2em;
+  font-family: Kaushan Script;
+}
+aside .devis a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: wiggle 4500ms infinite;
+  color: white;
+}
+aside .devis p {
+  font-size: 1.3076923077em;
+  text-shadow: 2px 2px 2px grey;
+  background-color: red;
+  border-radius: 10px;
+  margin: auto;
+  padding: 0 10px;
+  box-shadow: 2px 2px 12px 2px grey;
+  font-weight: bolder;
 }
 @media (max-width: 770px) {
   aside {
@@ -506,6 +537,7 @@ legend {
   cursor: pointer;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
 }
 @media (max-width: 770px) {
@@ -556,41 +588,6 @@ legend {
   border-radius: 20px;
   width: 200px;
   height: 200px;
-}
-
-aside {
-  display: flex;
-  flex-direction: column;
-  order: 2;
-}
-aside p {
-  color: white;
-}
-aside article:last-child {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  animation: wiggle 4500ms infinite;
-}
-aside article:last-child p {
-  font-size: 1.3076923077em;
-  text-shadow: 2px 2px 2px grey;
-  background-color: rgba(207, 68, 68, 0.23);
-  border-radius: 10px;
-  margin: auto;
-  padding: 0 10px;
-  box-shadow: 2px 2px 12px 2px grey;
-  font-weight: bolder;
-}
-aside article:last-child a {
-  color: red;
-}
-aside article:nth-of-type(2) {
-  flex-grow: 1;
-}
-aside a {
-  font-size: 1.2em;
-  font-family: Kaushan Script;
 }
 
 #groupe {
