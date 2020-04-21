@@ -148,8 +148,21 @@ aside {
 }
 article {
     font-size: $taille_font_p;
+   
 }
 section {
     margin: auto;
     padding:10px 0;
+}
+.vignette {
+    margin: 0 20px 20px 0;
+    width: 400px;
+    height: 200px;
+    box-shadow: -2px 2px 12px 0 grey;
+    padding: 0 30px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }

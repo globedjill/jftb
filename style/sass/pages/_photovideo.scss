@@ -1,0 +1,13 @@
+﻿#photo {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+    & .align_vignette_photo {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+
+}
