@@ -141,6 +141,7 @@ h3 {
   }
 }
 
+/*titre H2*/
 .titre_page {
   position: relative;
   font-size: 4em;
@@ -857,6 +858,62 @@ legend {
   #fdlm .align_vignette_photo article img {
     width: 100%;
   }
+}
+
+.mep_profil {
+  border: 1px solid rgba(255, 142, 0, 0.63);
+  border-radius: 20px;
+  box-shadow: -2px 2px 12px 0 grey;
+  margin: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.mep_profil .profil_entete {
+  padding: 0px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  background-color: green;
+}
+.mep_profil .profil_entete hgroup {
+  background-color: red;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  order: 2;
+  flex-grow: 1;
+  padding-left: 60px;
+}
+.mep_profil .profil_entete hgroup h2 {
+  margin: 0;
+  background-color: pink;
+}
+.mep_profil .profil_entete hgroup h3 {
+  background-color: pink;
+  margin: 0;
+}
+.mep_profil .profil_entete picture {
+  min-width: 390px;
+  order: 1;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.mep_profil .profil_entete picture img {
+  border: 5px solid rgba(255, 142, 0, 0.63);
+  border-radius: 100%;
+}
+.mep_profil .profil {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.mep_profil .profil .gauche {
+  min-width: 350px;
+  max-width: 350px;
+  padding: 0 20px;
 }
 
 /*# sourceMappingURL=style.css.map */

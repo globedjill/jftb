@@ -1,0 +1,63 @@
+﻿.mep_profil {
+    border: 1px solid $couleur_bg_nav;
+    border-radius: 20px;
+    box-shadow: -2px 2px 12px 0 grey;
+    margin: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    .profil_entete {
+        padding: 0px;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        & hgroup {
+            display: flex;
+            flex-direction: column;
+            justify-content:center;
+            align-items: flex-start;
+            order: 2;
+            flex-grow: 1;
+            padding-left:60px;
+
+            & h2 {
+                margin: 0;
+                & span {
+                }
+            }
+
+            & h3 {
+                margin: 0;
+            }
+        }
+
+        & picture {
+            min-width: 390px;
+            order: 1;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+
+            & img {
+                border: 5px solid $couleur_bg_nav;
+                border-radius: 100%;
+            }
+        }
+    }
+
+    .profil {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+
+        & .gauche {
+            min-width: 350px;
+            max-width: 350px;
+            padding: 0 20px;
+        }
+
+        & .droite {
+        }
+    }
+}
