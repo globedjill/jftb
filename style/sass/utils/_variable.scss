@@ -16,15 +16,18 @@
     $couleur_bg_aside: rgba(207, 68, 68, 0.23);
     $couleur_bg_footer: $couleur_bg_nav;
     $box_shadow: -2px 2px 12px 0 grey;
+    $bg_transparent:rgba(0,0,0,0);
 
 
 /*Les tailles*/
 $taille_font_h1: 2.5em;
 $taille_font_h2: 1.7em;
 $taille_font_h3: 2em;
+$taille_font-h4: $taille_font_h3;
 $taille_font_p: 1.2em;
 $taille_font_nav:1em;
 $taille_font_titrePage:4em;
 $taille_font_i:1.5em;
+
 
 $rotate_wiggle: 3deg;

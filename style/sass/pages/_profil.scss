@@ -12,35 +12,48 @@
         display: flex;
         flex-direction: row;
         justify-content: flex-start;
+
         & hgroup {
             display: flex;
             flex-direction: column;
-            justify-content:center;
+            justify-content: center;
             align-items: flex-start;
             order: 2;
             flex-grow: 1;
-            padding-left:60px;
+            padding-left: 60px;
 
             & h2 {
+                color: lighten($couleur_font_h3,10%);
                 margin: 0;
+                text-decoration: none;
+                font-size: $taille_font_titrePage;
+                text-shadow: 3px 2px 2px grey;
+
                 & span {
+                    color: white;
                 }
             }
 
             & h3 {
+                font-size: $taille_font_titrePage/1.5;
+                color: lighten($couleur_font_h3,10%);
+                text-decoration: none;
                 margin: 0;
+                text-shadow: 3px 2px 2px grey;
             }
         }
 
         & picture {
+            padding: 30px 0;
             min-width: 390px;
             order: 1;
             display: flex;
             flex-direction: row;
             justify-content: center;
+            background: $couleur_bg_nav;
 
             & img {
-                border: 5px solid $couleur_bg_nav;
+                border: 5px solid yellow;
                 border-radius: 100%;
             }
         }
@@ -52,12 +65,73 @@
         justify-content: center;
 
         & .gauche {
+            display: flex;
+            flex-direction: column;
             min-width: 350px;
             max-width: 350px;
             padding: 0 20px;
+            background: $couleur_bg_nav;
+
+            & i {
+                font-size: $taille_font_p*1.2;
+                padding-right: 10px;
+            }
+
+            & h4 {
+                text-align: center;
+                background: lighten($couleur_bg_nav,30%);
+                margin: 0px -20px 10px -20px;
+                padding: 5px 0;
+                border-top: 2px solid black;
+                border-bottom: 2px solid black;
+            }
+
+            & section {
+                display: flex;
+                flex-direction: column;
+                align-items: stretch;
+                margin: 0;
+
+                & p {
+                    font-size: $taille_font_p*1.2;
+                }
+            }
+
+            & section:nth-of-type(2) {
+                flex-grow: 1;
+            }
         }
 
         & .droite {
+            background-color: pink;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            flex-grow: 1;
+            padding: 0 20px 0 60px;
+
+            & section {
+                display: flex;
+                flex-direction: column;
+                background-color: red;
+                align-items: stretch;
+                margin: 0;
+                padding: 0;
+            }
+
+            & .mise_en_page {
+                background-color: blue;
+                display: flex;
+                flex-direction: row;
+
+                & .date_lieu {
+                    background-color: green;
+                }
+
+                & article {
+                    background-color: white;
+                }
+            }
         }
     }
 }
