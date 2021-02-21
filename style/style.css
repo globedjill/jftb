@@ -260,6 +260,7 @@ header .enTete .seCo ul li p {
   padding: 0;
 }
 header .enTete .seCo ul li ul {
+  display: none;
   font-size: 16px;
   position: fixed;
   width: 130px;
@@ -272,7 +273,6 @@ header .enTete .seCo ul li ul {
 }
 @media (max-width: 770px) {
   header .enTete .seCo ul li ul {
-    display: contents;
     right: 4px;
     top: 25px;
     padding: 0px 0px;
