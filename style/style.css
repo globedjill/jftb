@@ -246,10 +246,6 @@ header .enTete .seCo:hover ul li ul {
   border: 1px solid white;
   display: inline-block;
 }
-header .enTete .seCo:focus ul li ul {
-  border: 1px solid white;
-  display: inline-block;
-}
 header .enTete .seCo ul {
   list-style: none;
   margin: 0;
@@ -277,6 +273,7 @@ header .enTete .seCo ul li ul {
 }
 @media (max-width: 770px) {
   header .enTete .seCo ul li ul {
+    display: contents;
     right: 4px;
     top: 25px;
     padding: 0px 0px;
