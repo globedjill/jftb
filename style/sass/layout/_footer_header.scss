@@ -14,44 +14,131 @@
 
     @media(max-width:770px) {
         position: unset;
-
     }
 
-    & .titre {
-        position: relative;
+    & .enTete {
         display: flex;
         flex-direction: row;
-        margin: auto;
 
-        & img {
-            position: absolute;
-            left: -50%;
-            top: -1%;
+        & .titre {
+            position: relative;
+            display: flex;
+            flex-direction: row;
             margin: auto;
-            margin: auto 30px;
-            width: 150px;
-            height: 150px;
-            color: white;
+
+            & img {
+                position: absolute;
+                left: -40%;
+                top: -1%;
+                margin: auto;
+                margin: auto 30px;
+                width: 150px;
+                height: 150px;
+                color: white;
+
+                @media(max-width:770px) {
+                    left: 50%;
+                    top: 100%;
+                    width: 100px;
+                    height: 100px;
+                }
+            }
+        }
+
+        & .seCo {
+            position: fixed;
+            right: 100px;
+            top: 32px;
+            font-size: 12px;
+            border-radius: 10px;
+            background-color: $couleur_bg_nav;
+            margin: auto;
+            padding: 10px 20px;
+            width: 90px;
 
             @media(max-width:770px) {
-                left:50%;
-                top:100%;
-                width:100px;
-                height:100px;
+                right: 4px;
+                top: 2px;
+                padding: 0px 0px;
+                width: 104px;
+            }
+
+
+            &:hover {
+                border: 1px solid white;
+                border-radius: 10px 10px 0 0;
+                border-bottom-color: none;
+            }
+
+            &:hover ul li ul {
+                border: 1px solid white;
+                display: inline-block;
+            }
+
+            & ul {
+                list-style: none;
+                margin: 0;
+                padding: 0;
+
+                & li {
+                    padding: 5px;
+
+                    & p {
+                        text-align: center;
+                        margin: 0;
+                        padding: 0;
+                    }
+
+                    & ul {
+                        display: none;
+                        font-size: 16px;
+                        position: fixed;
+                        width: 130px;
+                        background-color: $couleur_bg_nav2;
+                        border-radius: 0px 0px 10px 10px;
+                        margin: 0;
+                        padding: 0px 0px;
+                        right: 100px;
+                        top: 79px;
+
+                        @media(max-width:770px) {
+                            right: 4px;
+                            top: 25px;
+                            padding: 0px 0px;
+                            font-size: 12px;
+                            width: 104px;
+                        }
+
+                        & li {
+                            padding: 10px 20px 10px 20px;
+
+                            &:hover {
+                                background-color: darken($couleur_bg_nav,50%);
+                                font-weight: bold;
+                            }
+
+                            & a {
+                                text-decoration: none;
+                                color: white;
+                            }
+                        }
+                    }
+                }
             }
         }
     }
 }
 
-footer {
-    background: $couleur_bg_footer;
-    margin: 50px 0 0 0;
-    padding: 10px;
-    display: flex;
-    justify-content: space-between;
-    & .dispositionicone {
+    footer {
+        background: $couleur_bg_footer;
+        margin: 50px 0 0 0;
+        padding: 10px;
         display: flex;
-        flex-direction: row;
-        margin-right: 30px;
+        justify-content: space-between;
+
+        & .dispositionicone {
+            display: flex;
+            flex-direction: row;
+            margin-right: 30px;
+        }
     }
-}

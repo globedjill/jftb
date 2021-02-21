@@ -190,15 +190,19 @@ header {
     position: unset;
   }
 }
-header .titre {
+header .enTete {
+  display: flex;
+  flex-direction: row;
+}
+header .enTete .titre {
   position: relative;
   display: flex;
   flex-direction: row;
   margin: auto;
 }
-header .titre img {
+header .enTete .titre img {
   position: absolute;
-  left: -50%;
+  left: -40%;
   top: -1%;
   margin: auto;
   margin: auto 30px;
@@ -207,12 +211,85 @@ header .titre img {
   color: white;
 }
 @media (max-width: 770px) {
-  header .titre img {
+  header .enTete .titre img {
     left: 50%;
     top: 100%;
     width: 100px;
     height: 100px;
   }
+}
+header .enTete .seCo {
+  position: fixed;
+  right: 100px;
+  top: 32px;
+  font-size: 12px;
+  border-radius: 10px;
+  background-color: rgba(255, 142, 0, 0.63);
+  margin: auto;
+  padding: 10px 20px;
+  width: 90px;
+}
+@media (max-width: 770px) {
+  header .enTete .seCo {
+    right: 4px;
+    top: 2px;
+    padding: 0px 0px;
+    width: 104px;
+  }
+}
+header .enTete .seCo:hover {
+  border: 1px solid white;
+  border-radius: 10px 10px 0 0;
+  border-bottom-color: none;
+}
+header .enTete .seCo:hover ul li ul {
+  border: 1px solid white;
+  display: inline-block;
+}
+header .enTete .seCo ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+header .enTete .seCo ul li {
+  padding: 5px;
+}
+header .enTete .seCo ul li p {
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+header .enTete .seCo ul li ul {
+  display: none;
+  font-size: 16px;
+  position: fixed;
+  width: 130px;
+  background-color: rgba(255, 142, 0, 0.8);
+  border-radius: 0px 0px 10px 10px;
+  margin: 0;
+  padding: 0px 0px;
+  right: 100px;
+  top: 79px;
+}
+@media (max-width: 770px) {
+  header .enTete .seCo ul li ul {
+    right: 4px;
+    top: 25px;
+    padding: 0px 0px;
+    font-size: 12px;
+    width: 104px;
+  }
+}
+header .enTete .seCo ul li ul li {
+  padding: 10px 20px 10px 20px;
+}
+header .enTete .seCo ul li ul li:hover {
+  background-color: rgba(0, 0, 0, 0.63);
+  font-weight: bold;
+}
+header .enTete .seCo ul li ul li a {
+  text-decoration: none;
+  color: white;
 }
 
 footer {
@@ -508,6 +585,7 @@ legend {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  margin-top: 50px;
 }
 @media (max-width: 770px) {
   .agencement_index {
