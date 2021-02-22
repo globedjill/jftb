@@ -7,6 +7,7 @@
     <title>JFTB</title>
     <meta name="auteur" content="MingotVirgil">
     <meta name="description" content="JFTB">
+    //
     <meta name="image" content="../images/logo.png">
 
     <meta property="og:image" content="../images/logo.png">
@@ -21,7 +22,7 @@
     <header>
         <div class='enTete'>
             <div class="titre">
-                <img src="images/logo.png" alt="logo" />
+                <img src="../images/logo.png" alt="logo" />
                 <h1><span>J</span>ohnny <span>F</span>orever <span>T</span>ribute <span>B</span>and</h1>
             </div>
 
@@ -34,16 +35,32 @@
         </nav>
     </header>
 
-    <form id='seConnecter' class='colonne'>
-        <div class='ligne'>
-            <label name='pseudo'>Pseudo</label>
-            <input id='pseudo' type="text" name='pseudo' />
+    <div class='pageSeConnecter'>
+        <h2>S'idendifier</h2>
+        <form id='seConnecter' class='colonne'>
+            <div id="divPseudo">
+                <label id='labelPseudo' name='pseudo'>Adresse e-mail ou pseudo</label>
+                <input id="inputPseudo" type="text" name='pseudo' />
+            </div>
+            <button id='bouttonSeCo'>Continuer</button>
+        </form>
+    </div>
+
+    <div class="creerCompte">
+        <p><a href="creationDeCompte.html">Je crée un compte</a></p>
+    </div>
+
+    <footer>
+        <p>Copyright JFTB - Tous droits réservés</p>
+        <p><a href="mailto:virgil.mingot@sfr.fr">Contactez-nous</a></p>
+        <div class="dispositionicone">
+            <p><a href="https://www.facebook.com/Johnny-Forever-tribute-band-523418138173617/" title="je vai voir" target="blank"><img src="../images/facebook.png" alt="icone facebook" /></a></p>
+            <p><a href="https://twitter.com/home?lang=fr" title="je vai voir" target="blank"><img src="../images/twitter.png" alt="icone twitter" /></a></p>
+            <p><a href="https://www.instagram.com/j.t.b.f.24000/?hl=fr" title="je vai voir" target="blank"><img src="../images/instagram.png" alt="icone insta" /></a></p>
         </div>
-        <div class='ligne'>
-            <label name='mdp'>Mot De Passe</label>
-            <input type="password" />
-        </div>
-    </form>
+    </footer>
+
+    <script src="../script/bouttonSeConnecter.js"></script>
 
 </body>
 </html>
