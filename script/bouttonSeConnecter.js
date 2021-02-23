@@ -27,14 +27,13 @@ bouttonSubmit.textContent = 'Se connecter';
 bouttonSubmit.setAttribute('onclick','submit');
 
 bouttonSeCo.addEventListener('click', e => {
-                       e.preventDefault();
-                       SeConnecter();
-                       });
+           e.preventDefault();
+           SeConnecter();
+});
 
 bouttonSubmit.addEventListener('click', e => {
-                         Interdit();
-                         console.log(bouttonSubmit);
-                         })
+    ManquePassword();
+})
 
 function SeConnecter() {
     var inputPseudoValue = document.getElementById("inputPseudo").value;
@@ -56,9 +55,11 @@ function SeConnecter() {
         divPassword.appendChild(inputPassword);
         divPassword.after(bouttonSubmit);
     }
-
 }
 
 function Interdit() {
     inputPseudo.setAttribute("required", "");
+}
+function ManquePassword() {
+    inputPassword.setAttribute("required", "");
 }

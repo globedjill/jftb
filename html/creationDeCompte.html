@@ -21,7 +21,7 @@
     <header>
         <div class='enTete'>
             <div class="titre">
-                <img src="images/logo.png" alt="logo" />
+                <img src="../images/logo.png" alt="logo" />
                 <h1><span>J</span>ohnny <span>F</span>orever <span>T</span>ribute <span>B</span>and</h1>
             </div>
 
@@ -32,8 +32,55 @@
             <p><a href="photovideo.html">Photos / Vidéos</a></p>
             <p><a href="contact.html">Contact</a></p>
         </nav>
-
     </header>
+
+    <div class='pageSeConnecter'>
+        <h2>Créer un compte</h2>
+        <form id='creationCompte' class='colonne'>
+            <div id="divNom">
+                <label id='labelNom' name='nom'>Nom</label>
+                <input id="inputNom" type="text" name='Nom' />
+            </div>
+            <div id="divPrenom">
+                <label id='labelPrenom' name='prenom'>Prénom</label>
+                <input id="inputPrenom" type="text" name='prenom' />
+            </div>
+
+            <div id="divMail">
+                <label id='labelMail' name='eMail'>E-mail</label>
+                <input id="inputMail" type="email" name='email'  />
+            </div>
+
+            <div id="password">
+                <label id='labelPassword' name='password'>Mot de passe</label>
+                <input id="inputPassword" type="password" name='password' />
+                <p id="pErreur"></p>
+            </div>
+            <div id="passwordComfirm">
+                <label id='labelPasswordConfirm' name='passwordConfirm'>Confirmer le mot de passe</label>
+                <input id="inputPasswordConfirm" type="password" name='passwordComfirm' />
+                <p id="pErreurMdp"></p>
+            </div>
+
+            <button id='bouttonCreation' type="submit">Je crée mon compte</button>
+        </form>
+    </div>
+
+    <div class="creerCompte">
+        <p><a href="seConnecter.html">J'ai déja un compte</a></p>
+    </div>
+
+    <footer>
+        <p>Copyright JFTB - Tous droits réservés</p>
+        <p><a href="mailto:virgil.mingot@sfr.fr">Contactez-nous</a></p>
+        <div class="dispositionicone">
+            <p><a href="https://www.facebook.com/Johnny-Forever-tribute-band-523418138173617/" title="je vai voir" target="blank"><img src="../images/facebook.png" alt="icone facebook" /></a></p>
+            <p><a href="https://twitter.com/home?lang=fr" title="je vai voir" target="blank"><img src="../images/twitter.png" alt="icone twitter" /></a></p>
+            <p><a href="https://www.instagram.com/j.t.b.f.24000/?hl=fr" title="je vai voir" target="blank"><img src="../images/instagram.png" alt="icone insta" /></a></p>
+        </div>
+    </footer>
+
+    <script src="../script/creationDeCompte.js"></script>
 
 </body>
 </html>
