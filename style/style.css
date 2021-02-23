@@ -273,6 +273,7 @@ header .enTete .seCo ul li ul {
 }
 @media (max-width: 770px) {
   header .enTete .seCo ul li ul {
+    display: contents;
     right: 4px;
     top: 25px;
     padding: 0px 0px;
