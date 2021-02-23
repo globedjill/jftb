@@ -3,10 +3,9 @@
   "version": "1.0.0",
   "description": "page web jtbf",
   "main": "index.js",
-    "scripts":
-    {
-        "sass": "sass --watch ./style/sass/_main.scss:./style/style.css"
-    },
+  "scripts": {
+    "sass": "sass --watch ./style/sass/_main.scss:./style/style.css"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/globedjill/jtbf.git"
